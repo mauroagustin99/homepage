@@ -1,0 +1,30 @@
+body{
+
+}
+header{
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+header>img{
+  width: 500px;
+  object-fit: cover;
+}
+
+.about-me{
+  border: 1px black solid;
+}
+
+section{
+  max-width: 1000px;
+  margin: auto;
+}
+.projects-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer{
+  max-width: 1000px;
+  margin: auto;
+}
