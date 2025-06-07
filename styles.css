@@ -82,12 +82,13 @@ header{
   font-size: 2em;
   margin: 0;
   width: 100%;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .about-me h1:not(.about-me-img > h1) {
   grid-column: 2 / 3;
   margin: 0;
+  align-self: center;
   font-size: 1.8em;
 }
 
@@ -113,6 +114,7 @@ header{
 section{
   max-width: 1000px;
   margin: auto;
+  margin-top: 5em;
 }
 
 .projects-container{
@@ -123,7 +125,7 @@ section{
 }
 
 .project{
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 8px 30px rgba(0, 0, 0, 0.4);
 }
 
 .project-title{
@@ -160,6 +162,7 @@ section{
 
 
 footer{
+  margin-top: 5em;
   padding: 3em;
   background-color: #1e1e1e;
   color: white;
@@ -207,25 +210,109 @@ footer{
   .projects-container{
     grid-template-columns: 1fr 1fr;
   }
-  header{
+  
+  .about-me{
     display: block;
+    position: relative;
+    max-width: 650px;
+    margin: auto;
+    height: 350px;
+    margin-top: 80px; 
+  padding-top: 40px; 
   }
   
   .about-me-img{
+    position: static;
     float: left;
+    transform: scale(1.15);
+    transform-origin: bottom right;
+    margin-right: 20px;
+    text-wrap: nowrap;
+    margin-top: -80px;
+    margin-bottom: 1em;
+    height: 350px;
+  }
+
+  .about-me-img > h1 {
+    transform: translate(-10%, -330%);
+    font-size: 3.5em;
+  }
+
+  .about-me>.social-icons{
+    display: none;
+  }
+
+  section,.footer-content{
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-container{
+    grid-template-columns: 1fr;
+  }
+
+  .project{
+    height: 300px;
   }
 
   .about-me{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: auto;
+    height: auto;
+    padding-top: 1em;
+    background: none;
+    box-shadow: none;
+  }
+  
+  .about-me-img{
+    align-self: center;
+    transform: scale(1);
+    text-wrap: nowrap;
+    height: 450px;
     width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+    box-shadow: 15px 8px 30px rgba(0, 0, 0, 0.4);
   }
 
+  .about-me-img > h1 {
+    transform: translate(-50%, 0);
+    font-size: 2.8em;
+   margin: 10px;
+    width: 100%;
+    text-align: left;
+    text-wrap: wrap;
+    line-height: 1;
+  }
 
+  .about-me>.social-icons{
+    display: flex;
+    align-self: center;
+  }
 
+  footer{
+    padding: 0;
+  }
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .contact{
+    padding: 2em;
+  }
+  .social-icons.footer-icons{
+    justify-content: center;
+  }
 
+  .contact-photo>img{
+    width: 100%;
+    height: auto;
+  }
 
-
-  
 }
 
 
