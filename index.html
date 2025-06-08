@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Mauro's Homepage</title>
 </head>
@@ -24,9 +25,11 @@
           <p>I love exploring new technologies, building projects from scratch, and learning something new every single day. Outside of coding, I enjoy traveling and discovering new places – it helps me stay inspired and creative.</p>
         </div>
         <div class="social-icons">
-          <a href="https://github.com/mauroagustin99" target="_blank"><i class="devicon-github-original colored"></i></a>
-          <a href="https://www.linkedin.com/in/mauro-agustin-marcosano/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
-          <a href="https://x.com/mauromrnr" target="_blank"><i class="devicon-twitter-original colored"></i></a>
+          <a class="link-icon" href="https://github.com/mauroagustin99" target="_blank"><i class="devicon-github-original colored"></i></a>
+          <a class="link-icon" href="https://www.linkedin.com/in/mauro-agustin-marcosano/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+          <a class="link-icon" href="https://x.com/mauromrnr" target="_blank"><i class="devicon-twitter-original colored"></i></a>
+          <a class="link-icon" href="https://www.instagram.com/mauromarcosano/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </header>
@@ -34,83 +37,87 @@
       <h2>My Projects</h2>
       <div class="projects-container">
         <div class="project">
-          <div class="project-image">Project 1</div>
+          <div class="project-image"><img class="project-img" src="./images/Projects/dmc.png" alt="Screenshot of DMC Offers"></div>
           <div class="project-info">
             <div class="project-title">
-              <h4>Project name</h4>
+              <h4>DMC Offers - In development</h4>
               <div class="project-links"> 
-                <a href="#"><i class="devicon-github-original colored"></i></a>              
+                <a href="https://github.com/AlexNHoyos/dmcoffers-client" target="_blank"><i class="devicon-github-original colored"></i></a>              
                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
-            <p>Short description of the project. Just a couple sentences will do.</p>
+            <p>A full-stack video game store built with Angular, Express, PostgreSQL, and TypeORM. Features include user profiles, favorites, shopping cart, personal library, role-based access control, and JWT-based authentication.</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image"><img class="project-img" src="./images/Projects/battleship.png" alt="Screenshot of Battleship game"></div>
+          <div class="project-info">
+            <div class="project-title">
+              <h4>Battleship Game</h4>
+              <div class="project-links"> 
+                <a href="https://github.com/mauroagustin99/battleship" target="_blank"><i class="devicon-github-original colored"></i></a>              
+                <a href="https://mauroagustin99.github.io/battleship/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p>A browser-based Battleship game where you play against a computer. Features manual/random ship placement, turn-based logic, and hit/miss detection. Built with JavaScript and tested with Jest.</p>
+          </div>
+        </div>
+        
+        <div class="project">
+          <div class="project-image"><img class="project-img" src="./images/Projects/weather.png" alt="Screenshot of Weather App"></div>
+          <div class="project-info">
+            <div class="project-title">
+              <h4>Weather App</h4>
+              <div class="project-links"> 
+                <a href="https://mauroagustin99.github.io/weather-app/" target="_blank"><i class="devicon-github-original colored"></i></a>              
+                <a href="https://mauroagustin99.github.io/weather-app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p>A simple app to check the weather. It was my first time working with APIs.</p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image">Project 1</div>
+          <div class="project-image"><img class="project-img" src="./images/Projects/tictactoe.png" alt="Screenshot of TicTacToe"></div>
           <div class="project-info">
             <div class="project-title">
-              <h4>Project name</h4>
+              <h4>Tic Tac Toe</h4>
               <div class="project-links"> 
-                <a href="#"><i class="devicon-github-original colored"></i></a>              
-                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/mauroagustin99/tic-tac-toe" target="_blank"><i class="devicon-github-original colored"></i></a>              
+                <a href="https://mauroagustin99.github.io/tic-tac-toe/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
-            <p>Short description of the project. Just a couple sentences will do.</p>
+            <p>One of my first JavaScript projects — a classic Tic Tac Toe game with a fun and responsive design. Play against a friend right in the browser!</p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image">Project 1</div>
+          <div class="project-image"><img class="project-img" src="./images/Projects/todo.png" alt="Screenshot of To Do App"></div>
           <div class="project-info">
             <div class="project-title">
-              <h4>Project name</h4>
+              <h4>To Do App</h4>
               <div class="project-links"> 
-                <a href="#"><i class="devicon-github-original colored"></i></a>              
-                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/mauroagustin99/to-do-list?tab=readme-ov-file" target="_blank"><i class="devicon-github-original colored"></i></a>              
+                <a href="https://mauroagustin99.github.io/to-do-list/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
-            <p>Short description of the project. Just a couple sentences will do.</p>
+            <p>A sleek to-do list app where you can create tasks by project, assign due dates and priorities, and even add colorful notes — all saved locally.</p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image">Project 1</div>
+          <div class="project-image"><img class="project-img" src="./images/Projects/etch.png" alt="Screenshot of Etch a Sketch"></div>
           <div class="project-info">
             <div class="project-title">
-              <h4>Project name</h4>
+              <h4>Etch-a-Sketch</h4>
               <div class="project-links"> 
-                <a href="#"><i class="devicon-github-original colored"></i></a>              
-                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/mauroagustin99/etch-a-sketch-project" target="_blank"><i class="devicon-github-original colored"></i></a>              
+                <a href="https://mauroagustin99.github.io/etch-a-sketch-project/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
-            <p>Short description of the project. Just a couple sentences will do.</p>
+            <p>A fun drawing app where you can sketch using your mouse! Choose colors, erase, change grid size, or show/hide the grid. Built entirely with JavaScript and DOM manipulation.</p>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image">Project 1</div>
-          <div class="project-info">
-            <div class="project-title">
-              <h4>Project name</h4>
-              <div class="project-links"> 
-                <a href="#"><i class="devicon-github-original colored"></i></a>              
-                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-            <p>Short description of the project. Just a couple sentences will do.</p>
-          </div>
         </div>
-        <div class="project">
-          <div class="project-image">Project 1</div>
-          <div class="project-info">
-            <div class="project-title">
-              <h4>Project name</h4>
-              <div class="project-links"> 
-                <a href="#"><i class="devicon-github-original colored"></i></a>              
-                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-            <p>Short description of the project. Just a couple sentences will do.</p>
-          </div>
-        </div>
+
       </div>
     </section>
   </main>
@@ -122,9 +129,10 @@
       <div class="contact-info"><i class="fa-solid fa-location-dot"></i><p>Rosario, Santa Fe, Argentina</p></div>
       <div class="contact-info"><i class="fa-solid fa-envelope"></i><a class="mail-link" href="mailto:mauromarcosano@gmail.com"><p>mauromarcosano@gmail.com</p></a></div>
       <div class="social-icons footer-icons">
-        <a href="https://github.com/mauroagustin99" target="_blank"><i class="devicon-github-original"></i></a>
-        <a href="https://www.linkedin.com/in/mauro-agustin-marcosano/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
-        <a href="https://x.com/mauromrnr" target="_blank"><i class="devicon-twitter-original"></i></a>
+        <a class="link-icon" href="https://github.com/mauroagustin99" target="_blank"><i class="devicon-github-original"></i></a>
+        <a class="link-icon" href="https://www.linkedin.com/in/mauro-agustin-marcosano/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+        <a class="link-icon" href="https://x.com/mauromrnr" target="_blank"><i class="devicon-twitter-original"></i></a>
+        <a class="link-icon" href="https://www.instagram.com/mauromarcosano/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="contact-photo">
