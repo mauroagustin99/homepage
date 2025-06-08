@@ -283,7 +283,7 @@ footer{
   }
 
   .project{
-    height: 300px;
+    max-height: 400px;
   }
 
   .about-me{
